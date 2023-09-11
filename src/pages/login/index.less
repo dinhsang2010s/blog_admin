@@ -1,0 +1,72 @@
+.login {
+  height: inherit;
+  .wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 58%;
+    z-index: -1;
+  }
+  .row {
+    width: 100vw;
+    height: 100vh;
+    .container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 30px;
+      img {
+        width: 110px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+      }
+
+      .tabs-login {
+        .ant-tabs-nav-list {
+          width: 100%;
+          .ant-tabs-tab {
+            flex: 1 1;
+            border-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+          }
+        }
+      }
+
+      .from-login {
+        width: 100%;
+        .ant-input {
+          &::placeholder {
+            color: #939394;
+            font-weight: 600;
+          }
+        }
+
+        .input-form-item {
+          height: 50px;
+          border-bottom: var(--border);
+          &:hover {
+            border-bottom: 3px solid var(--primary-color);
+          }
+        }
+
+        .btn-form-item {
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 600;
+          height: 40px;
+          border-radius: 18px;
+        }
+      }
+    }
+  }
+}
