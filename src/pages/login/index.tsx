@@ -208,9 +208,7 @@ export const Login = () => {
               items={items}
               onTabClick={(k) => {
                 setActiveKey(k);
-                useHistory(k === "1" ? `/login` : "/register", {
-                  replace: true,
-                });
+                useHistory(k === "1" ? `/login` : "/register");
               }}
             />
           </div>
